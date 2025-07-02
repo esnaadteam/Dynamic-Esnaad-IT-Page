@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريق إسناد لتكنولوجيا المعلومات - جامعة جدارا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HomePagestyles.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.ibb.co/qLk7ZYZT/bng.png" alt="شعار فريق إسناد">
+                <h1>فريق إسناد IT</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن النادي</a></li>
+                <li><a href="#goals">أهدافنا</a></li>
+                <li><a href="#library">المكتبة الرقمية</a></li>
+                <li><a href="#projects">مشاريع الأعضاء</a></li>
+                <li><a href="#posts">المنشورات</a></li>
+                <li><a href="#team">فريقنا</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="burger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="floating">فريق إسناد لتكنولوجيا المعلومات</h2>
+                <p>منصة طلاب جامعة جدارا للإبداع التقني وتبادل المعرفة في مجال تكنولوجيا المعلومات والبرمجة</p>
+                <div class="hero-buttons">
+                    <a href="#library" class="btn btn-blue pulse">استكشف المكتبة الرقمية</a>
+                    <a href="#projects" class="btn btn-red">شاهد مشاريع الأعضاء</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن النادي -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">عن الفريق</h2>
+            <div class="about-content">
+                <div class="about-text fade-in delay-1">
+                    <h3>تعريف الفريق</h3>
+                    <p>نادي إسناد لتكنولوجيا المعلومات هو مجتمع طلابي يهدف إلى تطوير مهارات الطلاب التقنية والبرمجية، وتنمية قدراتهم العملية والأكاديمية من خلال أنشطة تعليمية، تطبيقية، وتنافسية.</p>
+                    
+                    <div class="vision-mission fade-in delay-2">
+                        <h3>رؤية 2026</h3>
+                        <ul>
+                            <li>أن يصبح النادي مركًزا ريادًيا على مستوى الجامعة في تطوير مهارات تكنولوجيا المعلومات</li>
+                            <li>رفع المستوى الأكاديمي والعملي للطلاب المشاركين بالنادي بشكل ملحوظ</li>
+                            <li>تأهيل الطلاب بأساسيات قوية تؤهلهم للتميز في دراستهم ومشاريعهم التقنية</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="صورة عن الفريق" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأهداف -->
+    <section id="goals" class="goals">
+        <div class="container">
+            <h2 class="section-title fade-in">أهدافنا</h2>
+            
+            <div class="goals-tabs fade-in delay-1">
+                <button class="tab-btn active" data-tab="education-content">التعليمي</button>
+                <button class="tab-btn" data-tab="technical-content">التقني</button>
+                <button class="tab-btn" data-tab="social-content">الاجتماعي</button>
+            </div>
+            
+            <div class="tab-content active" id="education-content">
+                <div class="vision-mission">
+                    <h3>الهدف التعليمي</h3>
+                    <ul>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">تعزيز مهارات الطلاب في مجال تكنولوجيا المعلومات والبرمجة من خلال ورش عمل ودورات تدريبية متخصصة.</span>
+                        </li>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">تنظيم مسابقات وهاكاثونات لتحفيز الإبداع والتنافس البناء بين الطلاب.</span>
+                        </li>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">تعزيز التعاون مع مبادرة سمو ولي العهد في مجالات التعليم والتطوير، والعمل على تحقيق رؤية سموه في تحسين مستوى التعليم وتطوير مهارات الشباب.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="technical-content">
+                <div class="vision-mission">
+                    <h3>الهدف التقني</h3>
+                    <ul>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">تطوير مشاريع تقنية تخدم المجتمع الجامعي والمحلي.</span>
+                        </li>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">تعزيز استخدام التقنيات الحديثة في حل المشكلات.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="social-content">
+                <div class="vision-mission">
+                    <h3>الهدف الاجتماعي</h3>
+                    <ul>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">بناء مجتمع طلابي متعاون في مجال تكنولوجيا المعلومات.</span>
+                        </li>
+                        <li class="goal-item">
+                            <span class="goal-icon"><i class="fas fa-check"></i></span>
+                            <span class="goal-text">تعزيز التواصل بين الطلاب والخريجين والخبراء في المجال.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المكتبة الرقمية -->
+    <section id="library" class="library">
+        <div class="container">
+            <h2 class="section-title fade-in">المكتبة الرقمية</h2>
+            <div class="library-grid fade-in delay-1">
+                <div class="library-item">
+                    <i class="fas fa-file-code"></i>
+                    <h3>C++ الجزء الأول</h3>
+                    <p>أساسيات البرمجة بلغة C++ للمبتدئين</p>
+                    <a href="https://drive.google.com/drive/folders/1UYk0appLh7mvXJHfWJ-RTseueEgPZUnz?usp=sharing" target="_blank" class="btn btn-blue">عرض المحتوى</a>
+                </div>
+                
+                <div class="library-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>C++ الجزء الثاني</h3>
+                    <p>مواضيع متقدمة في البرمجة</p>
+                    <a href="#" class="btn btn-blue">عرض المحتوى</a>
+                </div>
+                
+                <div class="library-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>تطوير الويب</h3>
+                    <p>دليل شامل لـ HTML5 و CSS3</p>
+                    <a href="#" class="btn btn-blue">عرض المحتوى</a>
+                </div>
+                
+                <div class="library-item">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Introduction IT</h3>
+                    <p>أساسيات الشبكات وأنظمة التشغيل</p>
+                    <a href="#" class="btn btn-blue">عرض المحتوى</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title fade-in">إحصائيات الفريق</h2>
+            <p class="text-center mb-8 fade-in delay-1">نفخر بمساهمتنا في خدمة المجتمع من خلال أنشطتنا المختلفة. إليكم آخر إحصائياتنا:</p>
+            
+            <div class="stats-grid fade-in delay-2">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" id="volunteer"></div>
+                    <div class="stat-label">متطوع</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="stat-number" id="visitors"></div>
+                    <div class="stat-label">مستفيد</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">مشروع وفعالية</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنشورات -->
+    <section id="posts" class="posts">
+        <div class="container">
+            <h2 class="section-title fade-in">المنشورات</h2>
+            
+            <div class="posts-container fade-in delay-1">
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <div class="post-name">ESNAAD IT | إسناد ادمن</div>
+                            <div class="post-date">15 يونيو 2025</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h4>إعلان هام: هاكاثون البرمجة السنوي</h4>
+                        <p>يسر نادي إسناد أن يعلن عن هاكاثون البرمجة السنوي الذي سيقام يوم 25 يونيو 2025. سيكون الحدث فرصة رائعة لطلاب الجامعة لتطوير مهاراتهم البرمجية والعمل على مشاريع مبتكرة.</p>
+                        <p>آخر موعد للتسجيل: 20 يونيو 2025</p>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="صورة المنشور" class="post-image">
+                    </div>
+                </div>
+                
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <div class="post-name">ESNAAD IT | إسناد ادمن</div>
+                            <div class="post-date">5 مايو 2025</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h4>ورشة عمل جديدة: أساسيات الذكاء الاصطناعي</h4>
+                        <p>سيقيم النادي ورشة عمل حول أساسيات الذكاء الاصطناعي وتعلم الآلة يوم 15 مايو 2025. الورشة مناسبة للمبتدئين وستغطي المفاهيم الأساسية مع تطبيقات عملية.</p>
+                    </div>
+                </div>
+                
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <div class="post-name">ESNAAD IT | إسناد ادمن</div>
+                            <div class="post-date">20 أبريل 2025</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h4>إطلاق المكتبة الرقمية للنادي</h4>
+                        <p>يسرنا أن نعلن عن إطلاق المكتبة الرقمية لنادي إسناد، والتي تحتوي على مصادر تعليمية في مختلف مجالات تكنولوجيا المعلومات والبرمجة.</p>
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="صورة المنشور" class="post-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مشاريع الأعضاء -->
+    <section id="projects" class="members-projects">
+        <div class="container">
+            <h2 class="section-title fade-in">مشاريع الأعضاء</h2>
+            <div class="projects-filter fade-in delay-1">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">تطوير الويب</button>
+                <button class="filter-btn" data-filter="mobile">تطبيقات الجوال</button>
+                <button class="filter-btn" data-filter="ai">الذكاء الاصطناعي</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in delay-2" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="مشروع نظام إدارة المحتوى" loading="lazy">
+                    <div class="project-info">
+                        <h3>نظام إدارة المحتوى</h3>
+                        <p>نظام متكامل لإدارة محتوى المواقع الإلكترونية</p>
+                        <div class="project-skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in delay-3" data-category="ai">
+                    <img src="https://i.postimg.cc/QxFyWTw8/Whats-App-Image-2025-04-28-at-15-52-42-0c3067f6.jpg" alt="مشروع Green Eye" loading="lazy">
+                    <div class="project-info">
+                        <h3>روبوت لمراقبة النباتات</h3>
+                        <p>روبوت تم صناعتة وتجميعه من قبل المؤسسين يهدف الى تطوير قطاع الزراعة يعمل بكاميره بالذكاء الاصطناعي</p>
+                        <div class="project-skills">
+                            <span class="skill-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in delay-4" data-category="ai">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="مشروع نظام التوصيات" loading="lazy">
+                    <div class="project-info">
+                        <h3>نظام التوصيات</h3>
+                        <p>نظام توصيات للكتب والمصادر التعليمية</p>
+                        <div class="project-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريق العمل -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title fade-in">فريق العمل</h2>
+            <p class="text-center mb-8 fade-in delay-1">تأسس نادي إسناد على يد مجموعة من الطلاب المبدعين الذين يؤمنون بأهمية العمل التطوعي والتعليمي في المجتمع</p>
+            
+            <div class="team-grid fade-in delay-2">
+                <div class="team-card">
+                    <img src="https://i.postimg.cc/5yZQx7Jk/Whats-App-Image-2025-04-28-at-15-52-42-0c3067f6.jpg" alt="محمد ملكاوي" class="team-img">
+                    <h3 class="team-name">محمد ملكاوي</h3>
+                    <p class="team-role">المؤسس</p>
+                   
+                </div>
+                
+                <div class="team-card">
+                    <img src="https://i.postimg.cc/5yZQx7Jk/Whats-App-Image-2025-04-28-at-15-52-42-0c3067f6.jpg" alt="يوسف بدوان" class="team-img">
+                    <h3 class="team-name">يوسف بدوان</h3>
+                    <p class="team-role">المؤسس</p>
+
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">تواصل معنا</h2>
+            
+            <div class="contact-cards fade-in delay-1">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>esnaadteamjo@gmail.com</p>
+                    <a href="mailto:esnaadteamjo@gmail.com" class="btn btn-blue">إرسال بريد</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>الهاتف</h3>
+                    <p>0770495848</p>
+                    <a href="tel:0770495848" class="btn btn-red">اتصال</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>العنوان</h3>
+                    <p>جامعة جدارا</p>
+                    <a href="https://maps.app.goo.gl/tr3EwDhUUTyKpbgR6?g_st=com.google.maps.preview.copy" target="_blank" class="btn btn-blue">عرض على الخريطة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div>
+                <img src="https://i.ibb.co/qLk7ZYZT/bng.png" alt="شعار فريق إسناد">
+                <h3>فريق إسناد لتكنولوجيا المعلومات</h3>
+                <p>مجتمع طلابي يهدف إلى تطوير المهارات التقنية والبرمجية، وتنمية القدرات العملية والأكاديمية</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/16SUP6VhK4/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/esnaad_team"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@esnaadteam"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 فريق إسناد لتكنولوجيا المعلومات - جامعة جدارا. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="NightMode.js"></script>
+</body>
+</html>
