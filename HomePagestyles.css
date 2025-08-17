@@ -108,6 +108,7 @@
         .logo h1 {
             font-size: 1.3rem;
             background: var(--gradient-blue);
+            background-clip: unset;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
@@ -213,6 +214,7 @@
             font-size: 2.2rem;
             margin-bottom: 20px;
             background: linear-gradient(135deg, #ffffff, #dddddd);
+            background-clip: unset;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
