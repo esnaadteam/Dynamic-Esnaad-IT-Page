@@ -146,8 +146,3 @@
         document.addEventListener('DOMContentLoaded', function() {
             initAnimations();
         });
-//الاحصائيات
-let volunters = 23;
-let visitor;
-
-document.getElementById("visitors").textContent = volunters;

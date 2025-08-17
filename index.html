@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="HomePagestyles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!-- شريط التنقل -->
@@ -144,40 +145,49 @@
     </section>
 
     <!-- قسم المكتبة الرقمية -->
-    <section id="library" class="library">
-        <div class="container">
-            <h2 class="section-title fade-in">المكتبة الرقمية</h2>
-            <div class="library-grid fade-in delay-1">
-                <div class="library-item">
-                    <i class="fas fa-file-code"></i>
-                    <h3>C++ الجزء الأول</h3>
-                    <p>أساسيات البرمجة بلغة C++ للمبتدئين</p>
-                    <a href="https://drive.google.com/drive/folders/1UYk0appLh7mvXJHfWJ-RTseueEgPZUnz?usp=sharing" target="_blank" class="btn btn-blue">عرض المحتوى</a>
-                </div>
-                
-                <div class="library-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>C++ الجزء الثاني</h3>
-                    <p>مواضيع متقدمة في البرمجة</p>
-                    <a href="#" class="btn btn-blue">عرض المحتوى</a>
-                </div>
-                
-                <div class="library-item">
-                    <i class="fab fa-html5"></i>
-                    <h3>تطوير الويب</h3>
-                    <p>دليل شامل لـ HTML5 و CSS3</p>
-                    <a href="#" class="btn btn-blue">عرض المحتوى</a>
-                </div>
-                
-                <div class="library-item">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Introduction IT</h3>
-                    <p>أساسيات الشبكات وأنظمة التشغيل</p>
-                    <a href="#" class="btn btn-blue">عرض المحتوى</a>
-                </div>
+<section id="library" class="library">
+    <div class="container">
+        <h2 class="section-title fade-in">المكتبة الرقمية</h2>
+        <div class="library-grid fade-in delay-1">
+            <div class="library-item">
+                <i class="fas fa-file-code"></i>
+                <h3>C++ الجزء الأول</h3>
+                <p>أساسيات البرمجة بلغة C++ للمبتدئين</p>
+                <a href="https://drive.google.com/drive/folders/1UYk0appLh7mvXJHfWJ-RTseueEgPZUnz?usp=sharing" target="_blank" class="btn btn-blue">عرض المحتوى</a>
+            </div>
+            
+            <div class="library-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>C++ الجزء الثاني</h3>
+                <p>مواضيع متقدمة في البرمجة</p>
+                <a href="#" class="btn btn-blue">عرض المحتوى</a>
+            </div>
+            
+            <div class="library-item">
+                <i class="fab fa-html5"></i>
+                <h3>تطوير الويب</h3>
+                <p>دليل شامل لـ HTML5 و CSS3</p>
+                <a href="#" class="btn btn-blue">عرض المحتوى</a>
+            </div>
+            
+            <div class="library-item">
+                <i class="fas fa-info-circle"></i>
+                <h3>Introduction IT</h3>
+                <p>أساسيات الشبكات وأنظمة التشغيل</p>
+                <a href="#" class="btn btn-blue">عرض المحتوى</a>
+            </div>
+
+            <!-- New YouTube Lessons Item -->
+            <div class="library-item">
+                <i class="fab fa-youtube"></i>
+                <h3>دروس الفيديو</h3>
+                <p>مكتبة دروس الفيديو التعليمية للبرمجة والتقنية</p>
+                <a href="lessons.html" target="_blank" rel="noopener noreferrer" class="btn btn-red">شاهد الدروس</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- قسم الإحصائيات -->
     <section id="stats" class="stats">
@@ -190,7 +200,7 @@
                     <div class="stat-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="stat-number" id="volunteer"></div>
+                    <div class="stat-number" id="volunteer">30+</div>
                     <div class="stat-label">متطوع</div>
                 </div>
                 
@@ -198,7 +208,7 @@
                     <div class="stat-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
-                    <div class="stat-number" id="visitors"></div>
+                    <div class="stat-number" id="visitors">100+</div>
                     <div class="stat-label">مستفيد</div>
                 </div>
                 
@@ -206,7 +216,7 @@
                     <div class="stat-icon">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <div class="stat-number">1+</div>
+                    <div class="stat-number">3+</div>
                     <div class="stat-label">مشروع وفعالية</div>
                 </div>
             </div>
@@ -341,7 +351,17 @@
 
                 </div>
                 
-                </div>
+                <!-- <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>العنوان</h3>
+                    <p>المحتوى</p>
+
+                    <a href="tel:0770495848" class="btn btn-red">اتصال</a> 
+                    example to how you can a link
+                </div> -->
+            </div>
         </div>
     </section>
 
@@ -358,15 +378,6 @@
                     <h3>البريد الإلكتروني</h3>
                     <p>esnaadteamjo@gmail.com</p>
                     <a href="mailto:esnaadteamjo@gmail.com" class="btn btn-blue">إرسال بريد</a>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>الهاتف</h3>
-                    <p>0770495848</p>
-                    <a href="tel:0770495848" class="btn btn-red">اتصال</a>
                 </div>
                 
                 <div class="contact-card">
@@ -390,7 +401,7 @@
                 <p>مجتمع طلابي يهدف إلى تطوير المهارات التقنية والبرمجية، وتنمية القدرات العملية والأكاديمية</p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/16SUP6VhK4/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/esnaad_team"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ieee_ras_ju/"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.tiktok.com/@esnaadteam"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
