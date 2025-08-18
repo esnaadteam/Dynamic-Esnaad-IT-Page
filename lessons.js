@@ -1,22 +1,28 @@
-// قسم دروس الفيديو
-  const lessons = [
-    { id: "dQw4w9WgXcQ", title: "درس 1: مقدمة في HTML" },
-    { id: "kXYiU_JCYtU", title: "درس 2: أساسيات CSS" },
-    { id: "3JZ_D3ELwOQ", title: "درس 3: JavaScript للمبتدئين" }
-  ];
+const videos = {
+  math: [
+    { title: "Algebra Basics", url: "https://www.youtube.com/embed/5ANcspdYh_U" },
+    { title: "Geometry Introduction", url: "https://www.youtube.com/embed/Nhv5Y1Yw2zE" }
+  ],
+  cs: [
+    { title: "Intro to Programming", url: "https://www.youtube.com/embed/zOjov-2OZ0E" },
+    { title: "Data Structures", url: "https://www.youtube.com/embed/RBSGKlAvoiM" }
+  ],
+  history: [
+    { title: "World War II Overview", url: "https://www.youtube.com/embed/HUqy-OQvVtI" },
+    { title: "Ancient Civilizations", url: "https://www.youtube.com/embed/lKRoakKkQjI" }
+  ]
+}
 
-  const lessonsContainer = document.getElementById('lessonsContainer');
+function showVideos(subject) {
+  const videoList = document.getElementById("videoList")
+  videoList.innerHTML = `<h3>${subject.toUpperCase()} Videos</h3><ul>` +
+    videos[subject].map((v, i) => `<li onclick="playVideo('${subject}', ${i})">${v.title}</li>`).join('') +
+    `</ul>`
+}
 
-  lessons.forEach(lesson => {
-    const card = document.createElement('div');
-    card.className = 'bg-white p-4 rounded shadow hover:shadow-lg transition';
-
-  card.innerHTML = `
-    <iframe class="w-full h-64 mb-2" 
-      src="https://www.youtube.com/embed/${lesson.id}" 
-      frameborder="0" allowfullscreen></iframe>
-    <p class="text-center font-semibold">${lesson.title}</p>
-  `;
-
-    lessonsContainer.appendChild(card);
-  });
+function playVideo(subject, index) {
+  const player = document.getElementById("player")
+  const videoPlayer = document.getElementById("videoPlayer")
+  player.src = videos[subject][index].url
+  videoPlayer.style.display = "block"
+}
